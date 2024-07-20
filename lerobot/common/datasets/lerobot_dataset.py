@@ -406,3 +406,10 @@ class MultiLeRobotDataset(torch.utils.data.Dataset):
             f"  Transformations: {self.image_transforms},\n"
             f")"
         )
+
+
+if __name__ == "__main__":
+    from embdata.describe import describe
+
+    l = LeRobotDataset(repo_id="mbodiai/oxe_bridge_v2", split="default", version=None)
+    describe(l, compact=True, show=True)

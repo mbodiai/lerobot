@@ -235,13 +235,13 @@ def main():
     parser.add_argument(
         "--web-port",
         type=int,
-        default=9090,
+        default=5012,
         help="Web port for rerun.io when `--mode distant` is set.",
     )
     parser.add_argument(
         "--ws-port",
         type=int,
-        default=9087,
+        default=5011,
         help="Web socket port for rerun.io when `--mode distant` is set.",
     )
     parser.add_argument(
